@@ -41,7 +41,6 @@ import LogOut from './LogOut'
 import MenuIcon from './MenuIcon.vue'
 import { mapState, mapGetters, mapMutations } from "vuex";
 import store from '@/store'
-import { menuList, ICONIDMAP } from './config/index'
 export default {
     name: "LeftSideMenu",
     props:{
@@ -66,9 +65,7 @@ export default {
         // 接口返回菜单列表
         ...mapState('base', ['menuList', 'allMenuList']),
         menuListTree(){
-            //menuList 后端过滤后菜单
             //allMenuList 后端全菜单
-            //menuListConf 本地配置菜单
             return this.menuList
         }
     },
@@ -78,8 +75,6 @@ export default {
     data() {
         return {
             collapsed: false,
-            menuListConf: menuList,
-            ICONIDMAP: ICONIDMAP,
             current: '',
         }
     },
