@@ -1,0 +1,376 @@
+const menuList = [
+    {
+        id: 1,
+        name: '订单管理',
+        type: 1,
+        children: [
+            {
+                id: 7,
+                name: '鉴定订单管理',
+                type: 2,
+                path: '/check/index',
+                redirect: '/check/index',
+                children: [],
+            },
+        ],
+    },
+    {
+        id: 2,
+        name: '鉴定管理',
+        type: 1,
+        children: [
+            {
+                id: 8,
+                name: '鉴定师管理',
+                type: 2,
+                path: '/check/user',
+                redirect: '/check/user',
+                children: [
+                    {
+                        id: 9,
+                        name: '鉴定师添加',
+                        type: 4,
+                        path: '/check/adduser',
+                        redirect: '/check/adduser',
+                    },
+                    {
+                        id: 10,
+                        name: '鉴定师详情',
+                        type: 3,
+                        path: '/check/details',
+                        redirect: '/check/details',
+                    },
+                    {
+                        id: 11,
+                        name: '鉴定师更新',
+                        type: 4,
+                        path: '/check/updateuser',
+                        redirect: '/check/updateuser',
+                    },
+                    {
+                        id: 12,
+                        name: '鉴定师删除',
+                        type: 4,
+                        path: '/check/deleteuser',
+                        redirect: '/check/deleteuser',
+                    },
+                ],
+            },
+            {
+                id: 13,
+                name: '鉴定师结算',
+                type: 2,
+                path: '/check/settlement',
+                redirect: '/check/settlement',
+                children: [
+                    {
+                        id: 14,
+                        name: '鉴定师结算详情',
+                        type: 3,
+                        path: '/check/settlementdetails',
+                        redirect: '/check/settlementdetails',
+                    },
+                ],
+            },
+            {
+                id: 15,
+                name: '鉴定范围管理',
+                type: 2,
+                path: '/check/range',
+                redirect: '/check/range',
+                children: [
+                    {
+                        id: 16,
+                        name: '鉴定范围详情',
+                        type: 3,
+                        path: '/check/rangedetails',
+                        redirect: '/check/rangedetails',
+                    },
+                    {
+                        id: 17,
+                        name: '鉴定范围添加',
+                        type: 4,
+                        path: '/check/addrange',
+                        redirect: '/check/addrange',
+                    },
+                    {
+                        id: 18,
+                        name: '鉴定范围更新',
+                        type: 4,
+                        path: '/check/updaterange',
+                        redirect: '/check/updaterange',
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        id: 3,
+        name: '运营管理',
+        type: 1,
+        children: [
+            {
+                id: 19,
+                name: 'banner管理',
+                type: 2,
+                path: '/banner/index',
+                redirect: '/banner/index',
+                children: [
+                    {
+                        id: 20,
+                        name: 'banner详情',
+                        type: 3,
+                        path: '/banner/details',
+                        redirect: '/banner/details',
+                    },
+                    {
+                        id: 21,
+                        name: 'banner添加',
+                        type: 4,
+                        path: '/banner/add',
+                        redirect: '/banner/add',
+                    },
+                    {
+                        id: 22,
+                        name: 'banner更新',
+                        type: 4,
+                        path: '/banner/update',
+                        redirect: '/banner/update',
+                    },
+                    {
+                        id: 23,
+                        name: 'banner删除',
+                        type: 4,
+                        path: '/banner/delete',
+                        redirect: '/banner/delete',
+                    },
+                    {
+                        id: 24,
+                        name: 'banner结束',
+                        type: 4,
+                        path: '/banner/end',
+                        redirect: '/banner/end',
+                    },
+                ],
+            },
+            {
+                id: 25,
+                name: 'video管理',
+                type: 2,
+                path: '/video/index',
+                redirect: '/video/index',
+                children: [
+                    {
+                        id: 26,
+                        name: 'video详情',
+                        type: 3,
+                        path: '/video/details',
+                        redirect: '/video/details',
+                    },
+                    {
+                        id: 27,
+                        name: 'video添加',
+                        type: 4,
+                        path: '/video/add',
+                        redirect: '/video/add',
+                    },
+                    {
+                        id: 28,
+                        name: 'video更新',
+                        type: 4,
+                        path: '/video/update',
+                        redirect: '/video/update',
+                    },
+                    {
+                        id: 29,
+                        name: 'video删除',
+                        type: 4,
+                        path: '/video/delete',
+                        redirect: '/video/delete',
+                    },
+                ],
+            },
+            {
+                id: 48,
+                name: '品牌管理',
+                type: 2,
+                path: '/brand/index',
+                redirect: '/brand/index',
+                children: [
+                ],
+            },
+            {
+                id: 49,
+                name: '类目管理',
+                type: 2,
+                path: '/category/index',
+                redirect: '/category/index',
+                children: [
+                ],
+            },
+        ],
+    },
+    {
+        id: 4,
+        name: '用户管理',
+        type: 1,
+        children: [
+            {
+                id: 30,
+                name: '用户管理',
+                type: 2,
+                path: '/user/index',
+                redirect: '/user/index',
+                children: [
+                    {
+                        id: 31,
+                        name: '更新用户状态',
+                        type: 4,
+                        path: '/user/update',
+                        redirect: '/user/update',
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        id: 5,
+        name: '系统账户管理',
+        type: 1,
+        children: [
+            {
+                id: 32,
+                name: '后台账户管理',
+                type: 2,
+                path: '/adminuser/index',
+                redirect: '/adminuser/index',
+                children: [
+                    {
+                        id: 33,
+                        name: '系统账户详情',
+                        type: 3,
+                        path: '/adminuser/details',
+                        redirect: '/adminuser/details',
+                    },
+                    {
+                        id: 34,
+                        name: '添加系统账户',
+                        type: 4,
+                        path: '/adminuser/add',
+                        redirect: '/adminuser/add',
+                    },
+                    {
+                        id: 35,
+                        name: '更新系统账户',
+                        type: 4,
+                        path: '/adminuser/update',
+                        redirect: '/adminuser/update',
+                    },
+                    {
+                        id: 36,
+                        name: '重置密码系统账户',
+                        type: 4,
+                        path: '/adminuser/updatepwd',
+                        redirect: '/adminuser/updatepwd',
+                    },
+                    {
+                        id: 37,
+                        name: '系统账户状态更新',
+                        type: 4,
+                        path: '/adminuser/updatestatus',
+                        redirect: '/adminuser/updatestatus',
+                    },
+                ],
+            },
+            {
+                id: 38,
+                name: '角色管理',
+                type: 2,
+                path: '/role/index',
+                redirect: '/role/index',
+                children: [
+                    {
+                        id: 39,
+                        name: '角色详情',
+                        type: 3,
+                        path: '/role/details',
+                        redirect: '/role/details',
+                    },
+                    {
+                        id: 40,
+                        name: '角色添加',
+                        type: 4,
+                        path: '/role/add',
+                        redirect: '/role/add',
+                    },
+                    {
+                        id: 41,
+                        name: '角色删除',
+                        type: 4,
+                        path: '/role/updatestatus',
+                        redirect: '/role/updatestatus',
+                    },
+                ],
+            },
+            {
+                id: 42,
+                name: '修改密码',
+                type: 2,
+                path: '/adminuser/userindex',
+                redirect: '/adminuser/userindex',
+                children: [
+                    {
+                        id: 43,
+                        name: '更新系统账户密码',
+                        type: 4,
+                        path: '/adminuser/updatepwd',
+                        redirect: '/adminuser/updatepwd',
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        id: 6,
+        name: '系统管理',
+        type: 1,
+        children: [
+            {
+                id: 44,
+                name: '版本更新',
+                type: 2,
+                path: '/version/index',
+                redirect: '/version/index',
+                children: [
+                    {
+                        id: 45,
+                        name: '版本更新详情',
+                        type: 3,
+                        path: '/version/details',
+                        redirect: '/version/details',
+                    },
+                ],
+            },
+            {
+                id: 46,
+                name: '菜单管理',
+                type: 2,
+                path: '/menu/index',
+                redirect: '/menu/index',
+                children: [
+                    {
+                        id: 47,
+                        name: '菜单管理详情',
+                        type: 3,
+                        path: '/menu/details',
+                        redirect: '/menu/details',
+                    },
+                ],
+            },
+        ],
+    },
+]
+
+export {
+    menuList
+} 
