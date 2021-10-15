@@ -62,8 +62,6 @@ export default {
         margin-left: 232px;
     }
     .router_view_container{
-        // margin: 32px 32px 0 264px; // 路由出口默认配置
-        // height: calc(100vh - 136px); // 路由出口默认配置
         padding: 32px; // 路由出口默认配置
         max-height: calc(100% - 76px); // 路由出口默认配置,减去高度为路由信息高度
         overflow-y: scroll;
