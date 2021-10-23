@@ -30,7 +30,7 @@ const allUserRutes = [
             breadcrumbHidden: true,
         },
         hidden: true,
-        component: () => import(`@/views/appraiserSettlement`),
+        component: () => import(`@/views/draganddrop/H5`),
     },
     {
         path: '/check/user/add',
