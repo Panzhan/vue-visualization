@@ -44,6 +44,8 @@ Vue.prototype.$isMobile = /android/g.test(navigator.userAgent.toLowerCase()) || 
 
 import VueClipboard from 'vue-clipboard2' //复制
 Vue.use(VueClipboard)
+Vue.use(JsonViewer)
+import JsonViewer from 'vue-json-viewer'
 
 // 全局组件挂载
 Vue.component('Pagination', Pagination)
