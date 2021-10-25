@@ -229,7 +229,7 @@ export default {
       background: rgba(50, 112, 245, 0.5);
       box-shadow: 0px 2px 6px rgba(50, 112, 245, 0.45);
       border-radius: 4px;
-      font-family: RobotoBold;
+      font-family: PingFangSC-Semibold, PingFang SC;
       pointer-events: none;
       margin-top: 64px;
     }

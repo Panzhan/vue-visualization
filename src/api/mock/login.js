@@ -3,7 +3,7 @@ const userinfo = {
     "expiretime": 0,
     "data": {
         "name": "老板权限",
-        "headimgurl": "https://dolphin01.s3.amazonaws.com/solestage/28a2ad54005e45a8bdac2a26c4155873.jpg",
+        "headimgurl": "https://img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png",
         "id": 1,
         "username": "admin",
         "realname": "小admin",
