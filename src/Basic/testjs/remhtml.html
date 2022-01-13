@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" id="viewport"
+        content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/js" href='./js.js' charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href='./css.css' charset="utf-8">
+</head>
+
+<body>
+    <!DOCTYPE HTML>
+    <html>
+
+    <head>
+        <meta name="viewport" id="viewport"
+            content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href=charset="utf-8">
+    </head>
+    <style>
+    </style>
+
+    <body>
+        <h1>1234</h1>
+        <p>123412341234123412341234123412341234123412341234123412341234123412341234123412342134123412342134</p>
+        <p><img src="https://static.solestagesupply.com/solestage/c4b30ccabd8d4a1db6961d2bffc9ea21.png"></p>
+        <p><strong>1234</strong></p>
+        <p>
+            <span class="ql-size-huge">1234122134123412341241242141234124112341234</span>
+        </p>
+    </body>
+
+    </html>
+    <div id="testDiv" style="height:0; width:100px"></div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var objs = document.getElementsByTagName("img");
+        for (var i = 0; i < objs.length; i++) {
+            objs[i].onclick = function (i) {
+                return function () {
+                    window.webkit.messageHandlers.imageClickHandleName.postMessage(i);
+                }
+            }(i)
+        }
+    };
+</script>
+
+</html>

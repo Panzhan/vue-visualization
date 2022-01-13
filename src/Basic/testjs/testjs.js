@@ -1,15 +1,30 @@
-const arr = [
-    {
+let userInfo = {
+    item: {
         id: 1,
-        name: 'aaa'
+        name: '',
+        info: {
+            age: 12,
+            phone: ''
+        },
+        detail: {
+            a: [],
+            b: 'b',
+            c: {}
+        }
     },
-    {
-        id: 2,
-        name: 'bbb'
-    }
-]
+    isOpen: false,
+    address: ''
+}
 
-const res = arr.findIndex((it,idx,arr)=>
-    it.id == 2
-)
-console.log('res', res)
+function filterEmpty(obj){
+    for(let item in obj){
+        if(typeof obj[item] == 'object' && (Object.keys(obj[item]).length)){
+            filterEmpty(obj[item])
+        }
+        if(obj[item] === '' || (typeof obj[item] == 'object' && (!Object.keys(obj[item]).length))){
+            delete obj[item]
+        }
+    }
+}
+filterEmpty(userInfo)
+console.log('userInfo', userInfo)
