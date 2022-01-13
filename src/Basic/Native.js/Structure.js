@@ -1,8 +1,5 @@
 // structure
 // 解构赋值
-let BD = require('./BaseData'); // 基础数据源
-let DC = require('./DeepClone') // 深拷贝方法
-const cloneObj = DC.deepClone(BD.objData)
 let obj = {
     "name":"Nocholas",
     "isStudent":false,
