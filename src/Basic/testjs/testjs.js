@@ -1,30 +1,7 @@
-let userInfo = {
-    item: {
-        id: 1,
-        name: '',
-        info: {
-            age: 12,
-            phone: ''
-        },
-        detail: {
-            a: [],
-            b: 'b',
-            c: {}
-        }
-    },
-    isOpen: false,
-    address: ''
+var arr = [1,2,3,4,7,9]
+var index = [0,2,5,4,0,4,3,0,4,4,1]
+var telephone = ''
+for(var i=0;i<index.length;i++){
+    telephone += arr[index[i]]
 }
-
-function filterEmpty(obj){
-    for(let item in obj){
-        if(typeof obj[item] == 'object' && (Object.keys(obj[item]).length)){
-            filterEmpty(obj[item])
-        }
-        if(obj[item] === '' || (typeof obj[item] == 'object' && (!Object.keys(obj[item]).length))){
-            delete obj[item]
-        }
-    }
-}
-filterEmpty(userInfo)
-console.log('userInfo', userInfo)
+console.log(telephone) // 13971741772
