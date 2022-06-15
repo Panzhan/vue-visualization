@@ -237,7 +237,7 @@ export default {
             clickIndex: ''
         };
     },
-    created() { 
+    created() {
         // 读取缓存
         this.arrRight = localStorage.getItem('h5config') && JSON.parse(localStorage.getItem('h5config')) || JSON.parse(JSON.stringify(arrRight))
         // 缓存数据为空则添加两天数据
@@ -377,12 +377,11 @@ export default {
     border: 1px dotted rgb(207, 207, 207);
     position: absolute;
     left: 470px;
-    width: 375px;  
+    width: 375px;
     height: 667px;
     overflow-y: scroll;
     overflow-x: hidden;
     .page_display{
-        
         .top_title{
             text-align: center;
             font-size: 24px;

@@ -162,8 +162,7 @@ export default {
                 this.toast("两次密码不一致", "error");
                 return
             }
-            SysAccountApi
-            // TODO: 确认原密码参数,新接口
+            SysAccountAp
                 .adminuserUpdatePwd({id: this.userId, password: this.createFormValues.pwd2, oldpassword: this.createFormValues.pwd0, type: 1})
                 .then(()=>{
                     this.toast("操作成功", "success");

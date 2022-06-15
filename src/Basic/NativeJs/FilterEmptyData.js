@@ -1,5 +1,5 @@
 // FilterEmptyData
-
+// 过滤对象空数据
 let BD = require('./BaseData'); // 基础数据源
 let DC = require('./DeepClone') // 深拷贝方法
 

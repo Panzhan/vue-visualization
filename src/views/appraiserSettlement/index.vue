@@ -73,7 +73,6 @@ export default {
             CheckerApi
                 .findpage(params)
                 .then((res)=>{
-                    // TODO: 更新时间 创建时间取值
                     this.loading = false
                     this.dataSource = res.list
                     this.total = res.total

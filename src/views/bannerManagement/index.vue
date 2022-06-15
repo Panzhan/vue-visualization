@@ -64,7 +64,6 @@ export default {
             BannerApi
                 .gettabcount(params)
                 .then((res)=>{
-                    // TODO: STATUS映射关系
                     // res = res.sort(this.sortByKey('status'))
                     this.titles = res.map((item,index)=>{
                         return {

@@ -1,3 +1,6 @@
+// basedaba
+// 基础数据原
+
 const objData = {
     name: 'Nocholas',
     isStudent: false,

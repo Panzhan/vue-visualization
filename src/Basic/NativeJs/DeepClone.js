@@ -1,4 +1,5 @@
 // DEEPCLONE
+// 深拷贝数组，对象
 let BD = require('./BaseData'); // 基础数据源
 const deepClone = (obj)=>{
     if(typeof obj !== 'object') return ;
